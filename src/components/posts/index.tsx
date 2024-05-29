@@ -5,10 +5,7 @@ import Image from "next/image";
 export function Posts({ posts }: { posts: Post[] }) {
   return (
     <div className="w-full h-full  relative px-2 pt-10 pb-20 text-stone-1000">
-      <h2 className="font-bold text-2xl text-center mb-4 uppercase">
-        Recent Posts
-      </h2>
-      <ol className="flex flex-col gap-10">
+      <ol className="flex flex-col gap-10 md:grid md:grid-cols-2 max-w-screen-xl mx-auto">
         {posts.map(
           ({
             slug,
@@ -26,9 +23,9 @@ export function Posts({ posts }: { posts: Post[] }) {
                 <Image
                   src={featuredImage}
                   alt={title}
-                  width={400}
+                  width={800}
                   height={400}
-                  className="aspect-square object-cover rounded-t-md"
+                  className="object-cover rounded-t-md"
                 />
               </div>
               <div className="p-2 mb-1 flex flex-col">

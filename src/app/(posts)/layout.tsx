@@ -15,11 +15,14 @@ export default async function BlogLayout({
 
   return (
     <section>
-      <div className="mx-4 mt-8 mb-10">
+      <div className="mx-4 mt-8 mb-10 lg:mb-20 max-w-screen-md md:mx-auto">
         <div>{children}</div>
       </div>
 
-      <div className="w-full h-full  relative px-2 pt-10 pb-20">
+      <div className="w-full h-full  relative px-2 pt-10 pb-20  border-t border-stone-900">
+        <h2 className="font-bold text-2xl md:text-4xl text-center mb-4 uppercase">
+          Recent Posts
+        </h2>
         <Posts posts={posts} />
         <div className="w-full mb-10">
           <Pagination

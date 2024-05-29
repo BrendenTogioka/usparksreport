@@ -5,7 +5,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Next.js MDX Blog",
+  title: "US Parks Report",
 };
 
 export default function RootLayout({

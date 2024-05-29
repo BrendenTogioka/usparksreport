@@ -42,20 +42,42 @@ export default function Header() {
               </div>
               <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <Link href="/">Northeast</Link>
+                  <Link
+                    href="/category/northeast"
+                    onClick={() => setIsNavOpen(false)}
+                  >
+                    Northeast
+                  </Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <Link href="/">Midwest</Link>
+                  <Link
+                    href="/category/midwest"
+                    onClick={() => setIsNavOpen(false)}
+                  >
+                    Midwest
+                  </Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <Link href="/">South</Link>
+                  <Link
+                    href="/category/south"
+                    onClick={() => setIsNavOpen(false)}
+                  >
+                    South
+                  </Link>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <Link href="/">West</Link>
+                  <Link
+                    href="/category/west"
+                    onClick={() => setIsNavOpen(false)}
+                  >
+                    West
+                  </Link>
                 </li>
 
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <Link href="/about">About</Link>
+                  <Link href="/about" onClick={() => setIsNavOpen(false)}>
+                    About
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -63,16 +85,16 @@ export default function Header() {
 
           <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
             <li>
-              <Link href="/">Northeast</Link>
+              <Link href="/category/northeast">Northeast</Link>
             </li>
             <li>
-              <Link href="/">Midwest</Link>
+              <Link href="/category/midwest">Midwest</Link>
             </li>
             <li>
-              <Link href="/">South</Link>
+              <Link href="/category/south">South</Link>
             </li>
             <li>
-              <Link href="/">West</Link>
+              <Link href="/category/west">West</Link>
             </li>
             <li>
               <Link href="/about">About</Link>

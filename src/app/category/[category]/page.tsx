@@ -1,10 +1,7 @@
 import { categories, type Category } from "@/categories";
 import { Pagination } from "@/components/pagination";
 import { Posts } from "@/components/posts";
-import {
-  getPaginatedPostsByCategory,
-  postsPerPage,
-} from "@/posts";
+import { getPaginatedPostsByCategory, postsPerPage } from "@/posts";
 import { notFound } from "next/navigation";
 
 export default async function Category({
@@ -24,8 +21,10 @@ export default async function Category({
   });
 
   return (
-    <main>
-      <h1>Category: {category}</h1>
+    <main className="max-w-screen-xl mx-4 xl:mx-auto pt-8">
+      <h1 className="text-4xl sm:text-5xl xl:text-6xl leading-normal xl:leading-normal font-bold md:mb-4 uppercase">
+        {category}
+      </h1>
       <Posts posts={posts} />
 
       <Pagination

@@ -19,8 +19,10 @@ export default async function Page({ params }: { params: { page: number } }) {
   if (!posts.length) notFound();
 
   return (
-    <main className="">
-      <h1>Next.js MDX Blog (Page {page})</h1>
+    <main className="max-w-screen-xl mx-4 xl:mx-auto pt-8">
+      <h1 className="text-4xl sm:text-5xl xl:text-6xl leading-normal xl:leading-normal font-bold md:mb-4 uppercase">
+        US Parks Report Blog
+      </h1>
       <Posts posts={posts} />
 
       <Pagination

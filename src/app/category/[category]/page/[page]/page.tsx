@@ -30,8 +30,8 @@ export default async function Page({
 
   return (
     <main>
-      <h1>
-        Category: {category} (Page: {page})
+      <h1 className="text-4xl sm:text-5xl xl:text-6xl leading-normal xl:leading-normal font-bold mt-4 mb-4 ">
+        {category}
       </h1>
       <Posts posts={posts} />
 

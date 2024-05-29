@@ -13,17 +13,17 @@ export default async function Home() {
   });
 
   return (
-    <div className="max-w-screen-xl	mx-auto">
+    <div className="max-w-screen-3xl	mx-auto">
       <div className="w-full min-h-[70vh] h-full flex flex-col justify-center items-center relative px-2 text-stone-100">
         <div className="h-full flex flex-col justify-center items-center relative z-10">
-          <h1 className="font-bold text-3xl text-center mb-4">
+          <h1 className="font-bold text-3xl md:text-5xl xl:text-7xl text-center mb-4 ">
             The US Parks Report
           </h1>
-          <p className="font-medium text-lg text-center mb-4">
+          <p className="font-medium text-lg xl:text-xl text-center mb-4">
             Your Gateway to the Latest News and Insights on National and State
             Parks
           </p>
-          <form action="" className="w-full sm:w-80 px-2">
+          <form action="" className="w-full sm:w-90 max-w-[600px] px-2">
             <input
               type="text"
               placeholder="Enter a destination..."
@@ -47,6 +47,9 @@ export default async function Home() {
       </div>
 
       <div className="w-full h-full  relative px-2 pt-10 pb-20">
+        <h2 className="font-bold text-2xl md:text-4xl text-center mb-4 uppercase">
+          Recent Posts
+        </h2>
         <Posts posts={posts} />
         <div className="w-full mb-10">
           <Pagination

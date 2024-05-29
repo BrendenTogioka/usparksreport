@@ -10,7 +10,7 @@ export interface Post {
   description: string;
 }
 
-export const postsPerPage = 3 as const;
+export const postsPerPage = 4 as const;
 
 export async function getPosts(): Promise<Post[]> {
   // Retreive slugs from post routes
