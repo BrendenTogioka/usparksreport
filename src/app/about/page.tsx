@@ -21,7 +21,7 @@ export default async function About() {
           </h1>
           <p className="font-medium text-lg xl:text-xl text-center mb-4">
             We are avid nature lovers and are working to protect and
-            rehabilitate our country's environment.
+            rehabilitate our country&apos;s environment.
           </p>
         </div>
         <div className="w-screen h-full z-0">
