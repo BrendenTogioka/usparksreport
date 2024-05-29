@@ -28,15 +28,17 @@ export function Posts({ posts }: { posts: Post[] }) {
                   className="object-cover rounded-t-md"
                 />
               </div>
-              <div className="p-2 mb-1 flex flex-col">
-                <h3 className="font-bold text-2xl mb-2">{title}</h3>
-                <p>
-                  <strong>Published:</strong>{" "}
-                  {new Date(publishDate).toLocaleDateString()}{" "}
-                  <strong>Categories:</strong>{" "}
-                  {categories.map((cat, i) => `${i ? ", " : ""}${cat}`)}
-                </p>
-                <p className="mb-2">{description}</p>
+              <div className="p-2 mb-1 flex flex-col items-between flex-grow">
+                <div className="flex-grow">
+                  <h3 className="font-bold text-2xl mb-2">{title}</h3>
+                  <p>
+                    <strong>Published:</strong>{" "}
+                    {new Date(publishDate).toLocaleDateString()}{" "}
+                    <strong>Categories:</strong>{" "}
+                    {categories.map((cat, i) => `${i ? ", " : ""}${cat}`)}
+                  </p>
+                  <p className="mb-2">{description}</p>
+                </div>
                 <Link
                   href={`/${slug}`}
                   className="px-8 py-3  text-xl font-bold text-center rounded-md bg-emerald-700 text-stone-100"
