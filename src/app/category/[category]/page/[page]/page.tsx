@@ -29,7 +29,7 @@ export default async function Page({
   if (!posts.length) notFound();
 
   return (
-    <main>
+    <div className="">
       <h1 className="text-4xl sm:text-5xl xl:text-6xl leading-normal xl:leading-normal font-bold mt-4 mb-4 ">
         {category}
       </h1>
@@ -41,7 +41,7 @@ export default async function Page({
         perPage={postsPerPage}
         total={total}
       />
-    </main>
+    </div>
   );
 }
 

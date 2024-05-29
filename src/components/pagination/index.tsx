@@ -12,7 +12,7 @@ export function Pagination({
   total: number;
 }) {
   return (
-    <div className="text-xl font-medium flex justify-center gap-4">
+    <div className="text-xl font-medium flex justify-center gap-4 mb-10">
       {page !== 1 && (
         <>
           <Link

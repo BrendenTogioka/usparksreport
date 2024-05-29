@@ -6,7 +6,7 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
-    <header className="border-b border-gray-200 py-8 px-2 sm:px-4 lg:px-8">
+    <header className="border-b border-gray-200 py-8 px-2 sm:px-4 lg:px-8 relative z-50">
       <div className="flex items-center justify-between max-w-screen-xl	mx-auto">
         <Link href="/">
           <h1 className="font-black text-2xl">US Parks Report</h1>
@@ -24,7 +24,7 @@ export default function Header() {
 
             <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
               <div
-                className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
+                className="CROSS-ICON absolute top-0 right-0 px-8 py-8 z-20"
                 onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
               >
                 <svg

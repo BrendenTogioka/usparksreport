@@ -21,7 +21,7 @@ export default async function Category({
   });
 
   return (
-    <main className="max-w-screen-xl mx-4 xl:mx-auto pt-8">
+    <div className="max-w-screen-xl mx-4 xl:mx-auto  pt-8">
       <h1 className="text-4xl sm:text-5xl xl:text-6xl leading-normal xl:leading-normal font-bold md:mb-4 uppercase">
         {category}
       </h1>
@@ -33,7 +33,7 @@ export default async function Category({
         perPage={postsPerPage}
         total={total}
       />
-    </main>
+    </div>
   );
 }
 

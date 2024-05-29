@@ -1,5 +1,5 @@
 import type { MDXComponents } from "mdx/types";
-import { Heading1, Heading2 } from "@/components/heading1";
+import { Heading1, Heading2, Heading3 } from "@/components/heading";
 import { Paragraph } from "@/components/paragraph";
 import Image, { ImageProps } from "next/image";
 
@@ -7,6 +7,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h1: Heading1,
     h2: Heading2,
+    h3: Heading3,
     p: Paragraph,
     img: (props) => (
       <Image

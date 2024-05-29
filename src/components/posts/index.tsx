@@ -37,7 +37,7 @@ export function Posts({ posts }: { posts: Post[] }) {
                     <strong>Categories:</strong>{" "}
                     {categories.map((cat, i) => `${i ? ", " : ""}${cat}`)}
                   </p>
-                  <p className="mb-2">{description}</p>
+                  <p className="my-4">{description}</p>
                 </div>
                 <Link
                   href={`/${slug}`}
